@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji template-2</title>
+    <script src="https://kit.fontawesome.com/7fac20cd86.js" crossorigin="anonymous"></script>
+     <style>
+       *{margin: 0; padding: 0; box-sizing:border-box;}
+       body{font-family: -webkit-pictograph; background: linear-gradient(tomato, hotpink, rgb(197, 34, 197)); background-repeat: no-repeat; background-size: 100% 900px;}
+       .emoji-banner{margin: auto; width: 40%; height: 300px; border-radius: 20px; background-color: white; margin-top: 170px;} 
+       .emoji-show {
+    width: 73px;
+    height: 72px;
+    border-radius: 50%;
+    position: relative;
+    top: 73px;
+    left: 228px;
+    overflow: hidden;
+     }
+       
+.rating i{font-size: 50px; color: #e4e4e4; cursor: pointer; margin-top: 76px;} 
+.rating {
+    text-align: center;
+    margin-top: 41px;
+}
+#emojis {
+    transform: translateX(2px);
+    display: flex;
+    justify-content: space-between;
+    width: 413px;
+    transition: 0.5s;
+}
+
+    </style>
+</head>
+<body>
+     <div class="emoji-banner">
+           
+           
+           <div class="emoji-show">
+           <div id="emojis">
+               <img src="images/excellent.png" width="70px" height="70px"><br>
+               <img src="images/good.png" width="70px" height="70px"><br>
+               <img src="images/okay.png" width="70px" height="70px"><br>
+               <img src="images/bad.png" width="70px" height="70px"><br>
+               <img src="images/poor.png" width="70px" height="70px">
+           </div>
+        </div>
+       <div class="rating">
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+       </div>
+     </div>
+
+
+
+    <script>
+       var star = document.getElementsByClassName("fas");
+       var emojis = document.getElementById("emojis");
+
+       star[0].onclick = function(){
+        star[0].style.color="yellow";
+        star[1].style.color="#e4e4e4";
+        star[2].style.color="#e4e4e4";
+        star[3].style.color="#e4e4e4";
+        star[4].style.color="#e4e4e4";
+        emojis.style.transform="translateX(-341px)";
+       }
+
+       star[1].onclick = function(){
+        star[0].style.color="yellow";
+        star[1].style.color="yellow";
+        star[2].style.color="#e4e4e4";
+        star[3].style.color="#e4e4e4";
+        star[4].style.color="#e4e4e4";
+         emojis.style.transform="translateX(-255px)";
+       }
+
+       star[2].onclick = function(){
+        star[0].style.color="yellow";
+        star[1].style.color="yellow";
+        star[2].style.color="yellow";
+        star[3].style.color="#e4e4e4";
+        star[4].style.color="#e4e4e4";
+        emojis.style.transform="translateX(-170px)";
+       }
+
+       star[3].onclick = function(){
+        star[0].style.color="yellow";
+        star[1].style.color="yellow";
+        star[2].style.color="yellow";
+        star[3].style.color="yellow";
+        star[4].style.color="#e4e4e4";
+         emojis.style.transform="translateX(-84px)";
+       }
+
+       star[4].onclick = function(){
+        star[0].style.color="yellow";
+        star[1].style.color="yellow";
+        star[2].style.color="yellow";
+        star[3].style.color="yellow";
+        star[4].style.color="yellow";
+        emojis.style.transform="translateX(1px)";
+       }
+
+    </script>
+</body>
+</html>
